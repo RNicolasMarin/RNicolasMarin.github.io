@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" type="text/javascript"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/f60300b3a2.js" crossorigin="anonymous"></script>
+</head>
+<body onload="loadContent()">
+
+  <header class="topnav" id="myTopnav" onclick="menuIconAction()">
+    <a href="#home"                               class="active"> Home</a>
+    <a id="button-aboutMe"  href="#aboutMe"  class="not-pressed">Sobre Mi</a>
+    <a id="button-skills"   href="#skills"   class="not-pressed">Habilidades</a>
+    <a id="button-projects" href="#projects" class="not-pressed">Proyectos</a>
+    <a id="button-contact"  href="#contact"  class="not-pressed">Contacto</a>
+    <a href="javascript:void(0);" class="icon" >
+      <i class="fa fa-bars"></i>
+    </a>
+  </header>
+
+  <main>
+    
+    <section>
+      <div id="home" class="home">
+        <div class="center">
+          <h1>
+            <span class="name-span">Nicolas</span>
+            <span class="name-span">Marin</span>
+          </h1>
+          <p class="name-span" >Desarrollador de software</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="aboutMe-section" onmouseover="onMouseOver(this.id);" onmouseout="onMouseOver(this.id);">
+      <h3 id="aboutMe" class="section-title">Sobre Mi</h3>
+      <p>Soy un programador autodidacta, actualmente enfocado en programar en Android, en busca de un trabajo donde aportar mis conocimientos, obtener mas experiencia y crecer en el área de desarrollo.</p>
+    </section>
+    
+    <section id="skills-section"  onmouseover="onMouseOver(this.id);" onmouseout="onMouseOver(this.id);">
+      <h3 id="skills" class="section-title">Habilidades</h3>
+      <div id="skills-section-div"></div>
+    </section>
+    
+    <section id="projects-section" onmouseover="onMouseOver(this.id);" onmouseout="onMouseOver(this.id);">
+      <h3 id="projects" class="section-title">Proyectos</h3>
+      <div id="project-section-div"></div>
+    </section>
+
+    <section id="contact-section" onmouseover="onMouseOver(this.id);" onmouseout="onMouseOver(this.id);">
+      <h3 id="contact" class="section-title">Contacto</h3>
+      <div>
+        <a href="mailto:nicolasmarin1312@gmail.com" title="Enviar email">
+          <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/rnicolasmarin" title="Ir al perfil de linkedin">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        
+        <a href="https://gitlab.com/NicolasMarin" title="Ir al perfil de Gitlab">
+          <i class="fab fa-gitlab"></i>
+        </a>
+      </div>
+      
+    </section>
+    
+    <!--<footer class="page__footer">
+      <div class="footer__wraper">
+        <section class="footer">
+          <div class="footer__menu">
+            <nav class="list list__1">
+              <ul class="list">
+                <li>
+                  <a href="#home" title="Ir a Inicio">Inicio</a>
+                </li>
+                <li>
+                  <a href="#aboutMe" title="Ir a Sobre mí">Sobre mí</a>
+                </li>
+                <li>
+                  <a href="#skills" title="Ir a Habilidades">Habilidades</a>
+                </li>
+                <li>
+                  <a href="#projects" title="Ir a proyectos">Proyectos</a>
+                </li>
+                <li>
+                  <a href="#contact" title="Ir a contactar">Contacto</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="copy">
+              <h5>Nicolas Marin © 2020</h5>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>-->
+    
+  </main>
+
+</body>
+</html>
