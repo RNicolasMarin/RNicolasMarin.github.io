@@ -16,13 +16,11 @@ var projects = [
 		name: 'Updates Notifier', 
 		description: 'Aplicacion Android que te avisa si algun contenido de una Pagina Web ha cambiado.', 
 		link: 'https://gitlab.com/NicolasMarin/updates-notifier',
-		image: 'project_image_1.png',
 	},
 	{ 
 		name: 'MyPokedex', 
 		description: 'Aplicacion Android que recrea un Pokedex del anime de Pokemon, consumiendo la Api-Rest PokéAPI.', 
 		link: 'https://gitlab.com/NicolasMarin/mypokedex',
-		image: 'project_image_2.png',
 	},
 	{ 
 		name: 'Rename Files', 
@@ -36,58 +34,9 @@ var projects = [
 	}
 ];
 
-function drawProjectsTable(){
-	var columnMax = window.outerWidth > 1685 ? 2 : (window.outerWidth > 865 ? 1 : 0);
-
-	var htmlToInsertProjects = "";
-	projects.forEach(function (element, index) {
-		if(index % columnMax == 0){
-			htmlToInsertProjects += "<tr>";
-		}
-
-		var classAcordingImage = (columnMax == 0 || (element.image != undefined && element.image != null)) ?
-			"project-item-info" : "project-item-info-full-width";
-		var projectClass = (columnMax == 0) ? 'project-item-middle-width' : 'project-item';
-
-		htmlToInsertProjects += 
-			`<th>\n
-				<div class="${projectClass}">\n
-					<div class="${classAcordingImage}">\n
-						<div class="project-item-title-description-div">\n
-							<h3 class="project-title">${element.name}</h3>\n
-							<p class="project-description">${element.description}</p>\n
-						</div>\n
-	
-						<div class="project-button-div">\n
-							<a class="project-button-link" href="${element.link}">\n
-								<span class="button-repo">\n
-									<i id="button-repo-icon" class="fas fa-code"></i>\n
-									Repositorio\n
-								</span>\n
-							</a>\n
-						</div>\n
-					</div>\n`;
-
-		if(columnMax != 0 && element.image != undefined && element.image != null){
-			htmlToInsertProjects += 
-					`<div class="project-item-image-div">\n
-						<img src="./image/${element.image}" class="project-item-image"/>\n
-					</div>\n`;
-		}
-
-		htmlToInsertProjects += 
-				`</div>\n
-			</th>`;
-
-		if(index % columnMax != 0){
-			htmlToInsertProjects += "</tr>";
-		}
-	});
-	document.getElementById("project-section-div").innerHTML = htmlToInsertProjects;
-}
 
 function loadContent() {
-	var htmlToInsertSkills = "";
+	var htmlToInsertSkills = "", htmlToInsertProjects = "";
 	
 	skills.forEach((value, key) => {
 		htmlToInsertSkills += `<h4 class='skill-title'>${key}</h4>`;
@@ -97,7 +46,31 @@ function loadContent() {
 	});
 	document.getElementById("skills-section-div").innerHTML = htmlToInsertSkills;
 
-	drawProjectsTable();
+	projects.forEach(element => {
+		htmlToInsertProjects += 
+		`<div class="project-item">\n
+			<div class="project-item-info">\n
+				<div class="project-item-title-description-div">\n
+					<h3 class="project-title">${element.name}</h3>\n
+					<p class="project-description">${element.description}</p>\n
+				</div>\n
+
+				<div class="project-button-div">\n
+					<a class="project-button-link" href="${element.link}">\n
+						<span class="button-repo">\n
+							<i id="button-repo-icon" class="fas fa-code"></i>\n
+							Repositorio\n
+						</span>\n
+					</a>\n
+				</div>\n
+			</div>\n
+			<!--<img src="./image/project_image_01.png" class="project-item-image"/>-->
+			<!--<div class="project-item-image-div">\n
+				<img src="./image/project_image_01.png" class="project-item-image"/>\n
+			</div>\n-->
+		</div>\n`;
+	});
+	document.getElementById("project-section-div").innerHTML = htmlToInsertProjects;
 }
 
 function menuIconAction() {
@@ -110,6 +83,9 @@ function menuIconAction() {
 }
 
 function onMouseOver(id){
+	console.log(id);
+
+	/*lo hardcodie para la primera section y el primer boton, hacerlo generico*/
 	var buttonId = "";
 	switch(id){
 		case 'aboutMe-section': {
@@ -136,4 +112,13 @@ function onMouseOver(id){
 	} else {
 		x.className = "not-pressed";
 	}
+
+
+	/*document.getElementById(id).style = {}
+	switch(id){
+		case 'aboutMe-section': {
+
+		}
+	}*/
+	//document.getElementById("skills-section-div").innerHTML = htmlToInsertSkills;
 }
