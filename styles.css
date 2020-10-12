@@ -41,11 +41,10 @@ body {
   top: 0;
   left: 0;
   text-align: center;
-  /*color: white;
-  background: #1976D2;*/
   width: 100%;
   overflow: hidden;
   background-color: var(--topnav-background);
+  z-index: 5;
 }
 
 .not-pressed {
@@ -123,7 +122,6 @@ body {
   font-size: 40px;
   text-align: center;
   color: var(--section-title);
-  /*background-color: salmon;*/
   margin: 60px 0px 50px 0px;
 }
 
@@ -139,20 +137,20 @@ body {
   background-size: cover;
   padding-bottom: 53px;
   scroll-margin-top: 5rem;
+  z-index: 3;
 }
 
 .center {
   font-size: 35px;
   text-align: center;
+  margin: 0;
   top: 40%;
   width: 100%;
-  margin: 0;
   position: absolute;
 }
 
 .name-span {
   color: white;
-  /*text-shadow: 0 0 10px #000;/*#4CAF50*/
   text-shadow: 2px 0 0 var(--my-dark), 
               -2px 0 0 var(--my-dark), 
                0 2px 0 var(--my-dark), 
@@ -177,10 +175,6 @@ body {
   border-top:5px solid var(--border-section);
 }
 
-/*.aboutMe-section:hover {
-  background-color: var(--topnav-button-hover-background);
-}*/
-
 #aboutMe-section p {
   max-width: 80%;
   margin: auto;
@@ -193,7 +187,6 @@ body {
 #skills-section {
   margin: auto;
   text-align: center;
-  /*max-width: 900px;*/
   padding-top: 0px;
   padding-bottom: 70px;
   background-color: var(--aboutMe-section-background);
@@ -203,7 +196,6 @@ body {
 .skill-title {
   margin: 40px 0px 25px 0px;
   color: var(--aboutMe-section-text);
-  /*background-color: red;*/
 }
 
 #skills-section-div {
@@ -236,21 +228,50 @@ body {
   border-top:5px solid var(--border-section);
 }
 
+#project-section-div {
+  margin: auto;
+  
+}
+
 .project-item {
   background-color: var(--my-grey);
   border-radius: 10px;
-  width: 80%;
+  width: 780px;
   height: 400px;
   margin: auto;
   padding: 10px;
-  margin-bottom: 10px;
+  border-style: solid;
+  border-color: var(--aboutMe-section-background);
+  border-width: 10px;
+}
+
+.project-item:hover, .project-item-middle-width:hover {
+  border-style: solid;
+  border-color: var(--my-lightGrey);
+  border-width: 10px;
+}
+
+.project-item-middle-width {
+  background-color: var(--my-grey);
+  border-radius: 10px;
+  width: 390px;
+  height: 400px;
+  margin: auto;
+  padding: 10px;
+  border-style: solid;
+  border-color: var(--aboutMe-section-background);
+  border-width: 10px;
+}
+
+.project-item-info-full-width {
+  width: 780px;
+  height: 400px;
+  float: left;
 }
 
 .project-item-info {
-  /*width: 50%;*/
-  width: 100%;
+  width: 390px;
   height: 400px;
-  /*background: red;*/
   float: left;
 }
 
@@ -279,6 +300,7 @@ body {
 
 .project-button-div{
   height: 18%;
+  text-align: left;
 }
 
 .project-button-link {
@@ -293,17 +315,8 @@ body {
   font-size: 24px;
   border-radius: 5px;
   padding: 8px 20px 8px 20px;
-  
   position: static;
   bottom: 0px;
-  /*position: relative;
-  bottom: 200px;
-  left: 16px;
-  font-size: 18px;*/
-  /*
-  background-color: #4CAF50;
-  margin-bottom: 10px;
-  display: inline-block;*/
 }
 
 #button-repo-icon{
@@ -314,28 +327,9 @@ body {
   background-color: var(--my-green-shadow)
 }
 
-
 .project-item-image {
-  /*height: 400px;
-  position: absolute;
-  right: 0;*/
-
-  /*ver como poner la imagen como esta pero pegado a la derecha*/
-
-  /*margin-left: 50%;
-  width: 50%;*/
-  /*max-height: 100%;
-  max-width: 100%;*/
-  /*width: 100%;
-  height: initial;*/
-  /*height:100%;*/
-  /*width: 100%;
-  overflow: hidden;
-  /*max-height: 100%;*/
-  /*display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;*/
+  height: 400px;
+  width: 390px;
 }
 
 
@@ -343,17 +337,10 @@ body {
 #contact-section {
   margin: auto;
   text-align: center;
-
   padding-top: 0px;
   padding-bottom: 90px;
   border-top:5px solid var(--border-section);
   background-color: var(--aboutMe-section-background);
-  /*
-  */
-
-  /*margin: 0px;
-  padding: 0px;
-  background-color: blue;*/
 }
 
 #contact-section a {
@@ -370,24 +357,24 @@ body {
   aria-hidden: "true";
 }
 
+#mail-icon:hover {
+  color: white;
+}
 
+#linkedin-icon:hover {
+  color: rgb(0, 123, 182);
+}
 
+#gitlab-icon:hover {
+  color: rgb(252, 110, 38);
+}
 
-
-
-
+#resume-icon:hover {
+  color: red;
+}
 
 
 
 h3 {
   scroll-margin-top: 5rem;
 }
-
-/*
-para quitar el punto de cada item de lista
-ul {
-    padding: 0;
-    list-style: none;
-}
-*/
-
