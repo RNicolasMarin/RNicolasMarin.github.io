@@ -1,43 +1,7 @@
-var skills = new Map();
-
-skills.set("Lenguajes", ["Java", "Kotlin", "Javascript"]);
-skills.set("Android", ["Fragments", "Styles", "Service", "BroadcastReceiver", "RecyclerView", "Notification", "AlarmManager", "Room", "Retrofit", "Glide"]);
-skills.set("VCS", ["Git (GitLab)", "Git (GitHub)"]);
-skills.set("Metodologías, comunicación y trabajo en equipo", ["Scrum", "Zoom", "Meet", "Trello", "Jira"]);
-skills.set("DBMS", ["PostgreSQL", "MySQL", "MongoDB"]);
-skills.set("S.O", ["Windows", "Linux", "Android"]);
-skills.set("IDE", ["Eclipse", "Android Studio"]);
-skills.set("Editores", ["Visual Studio Code", "Sublime Text"]);
-skills.set("Otros", ["HTML", "JSON", "XML", "JUnit", "Hibernate", "POO", "Sql", "Linea de Comandos", "Maven", "Gradle", "Jsoup", "Swing", "WindowBuilder", "Consumo de Api-rest"]);
-
-
-var projects = [
-    { 
-		name: 'Updates Notifier', 
-		description: 'Aplicacion Android que te avisa si algun contenido de una Pagina Web ha cambiado.', 
-		link: 'https://gitlab.com/NicolasMarin/updates-notifier',
-		image: 'project_image_1.png',
-	},
-	{ 
-		name: 'MyPokedex', 
-		description: 'Aplicacion Android que recrea un Pokedex del anime de Pokemon, consumiendo la Api-Rest PokéAPI.', 
-		link: 'https://gitlab.com/NicolasMarin/mypokedex',
-		image: 'project_image_2.png',
-	},
-	{ 
-		name: 'Rename Files', 
-		description: 'Aplicacion de linea de comandos para renombrar todos los archivos de un directorio con el mismo patron.', 
-		link: 'https://gitlab.com/NicolasMarin/rename-files',
-	},
-	{ 
-		name: 'ImagesToPdf', 
-		description: 'Programa Java para convertir los archivos de imágenes en un directorio en un archivo PDF.', 
-		link: 'https://gitlab.com/NicolasMarin/images-to-pdf',
-	}
-];
-
 function drawProjectsTable(){
 	var columnMax = window.outerWidth > 1685 ? 2 : (window.outerWidth > 865 ? 1 : 0);
+
+	var projects = JSON.parse(projectsData);
 
 	var htmlToInsertProjects = "";
 	projects.forEach(function (element, index) {
@@ -84,17 +48,19 @@ function drawProjectsTable(){
 		}
 	});
 	document.getElementById("project-section-div").innerHTML = htmlToInsertProjects;
+
 }
 
 function loadContent() {
 	var htmlToInsertSkills = "";
+	var skills = JSON.parse(skillsData);
 	
-	skills.forEach((value, key) => {
-		htmlToInsertSkills += `<h4 class='skill-title'>${key}</h4>`;
-		skills.get(key).forEach(element => {
+	for (index in skills) {
+		htmlToInsertSkills += `<h4 class='skill-title'>${skills[index]["key"]}</h4>`;
+		skills[index]["values"].forEach(element => {
 			htmlToInsertSkills += `<span class="button">${element}</span>`;
 		});
-	});
+	}
 	document.getElementById("skills-section-div").innerHTML = htmlToInsertSkills;
 
 	drawProjectsTable();
