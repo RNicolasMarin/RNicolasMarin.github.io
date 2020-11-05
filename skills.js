@@ -6,11 +6,11 @@ skillsData =
         '},' +
         '{' + 
             '"key": "Android", ' +
-            '"values": ["Fragments", "Styles", "Service", "BroadcastReceiver", "RecyclerView", "Notification", "AlarmManager", "Room", "Retrofit", "Glide"]' +
+            '"values": ["Fragments", "Styles", "Service", "BroadcastReceiver", "RecyclerView", "Notification", "AlarmManager", "Room", "Retrofit", "Glide", "MVP", "SQLite"]' +
         '},' +
         '{' + 
             '"key": "VCS", ' +
-            '"values": ["Git (GitLab)", "Git (GitHub)"]' +
+            '"values": ["Git (GitLab)", "Git (GitHub)", "Git (GitLab CI)"]' +
         '},' +
         '{' + 
             '"key": "Metodologías, comunicación y trabajo en equipo", ' +
