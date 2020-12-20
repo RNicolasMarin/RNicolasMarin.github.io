@@ -6,7 +6,19 @@ skillsData =
         '},' +
         '{' + 
             '"key": "Android", ' +
-            '"values": ["Fragments", "Styles", "Service", "BroadcastReceiver", "RecyclerView", "Notification", "AlarmManager", "Room", "Retrofit", "Glide", "MVP", "SQLite"]' +
+            '"values": ["Fragments", "Styles", "Service", "BroadcastReceiver", "RecyclerView", "Notification", "AlarmManager", "MutableLiveData", "Intent/Intent Filter", "Menu", "AlertDialog", "FloatingActionButton"]' +
+        '},' +
+        '{' + 
+            '"key": "Android: Componentes de Arquitectura", ' +
+            '"values": ["ViewModel", "Room", "LiveData"]' +
+        '},' +
+        '{' + 
+        '"key": "Android: Librerias", ' +
+        '"values": ["Retrofit", "Gson", "Glide"]' +
+        '},' +
+        '{' + 
+            '"key": "Patrones", ' +
+            '"values": ["MVVM", "MVP", "MVC", "Singleton"]' +
         '},' +
         '{' + 
             '"key": "VCS", ' +
@@ -17,8 +29,8 @@ skillsData =
             '"values": ["Scrum", "Zoom", "Meet", "Trello", "Jira"]' +
         '},' +
         '{' + 
-            '"key": "DBMS", ' +
-            '"values": ["PostgreSQL", "MySQL", "MongoDB"]' +
+            '"key": "Database", ' +
+            '"values": ["Sql", "SQLite", "PostgreSQL", "MySQL", "MongoDB"]' +
         '},' +
         '{' + 
             '"key": "S.O", ' +
@@ -34,6 +46,6 @@ skillsData =
         '},' +
         '{' + 
             '"key": "Otros", ' +
-            '"values": ["HTML", "JSON", "XML", "JUnit", "Hibernate", "POO", "Sql", "Linea de Comandos", "Maven", "Gradle", "Jsoup", "Swing", "WindowBuilder", "Consumo de Api-rest"]' +
+            '"values": ["HTML", "JSON", "XML", "JUnit", "Hibernate", "POO", "Linea de Comandos", "Maven", "Gradle", "Jsoup", "Swing", "WindowBuilder", "Consumo de Api-rest"]' +
         '}' +
     ']';
