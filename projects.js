@@ -1,10 +1,16 @@
 projectsData = 
     '[' +
         '{' + 
-            '"name": "Updates Notifier", ' +
-            '"description": "Aplicacion Android que te avisa si algun contenido de una Pagina Web ha cambiado.", ' +
-            '"link": "https://gitlab.com/NicolasMarin/updates-notifier",'+
-            '"image": "project_image_1.png"'+
+            '"name": "VideoPartReminder",'+
+            '"description": "Aplicacion Android que permite guardar la url, el nombre y un momento de un video de Youtube que quieras recordar.", '+
+            '"link": "https://gitlab.com/NicolasMarin/videopartreminder",'+
+            '"image": "project_image_4.png"'+
+        '},' +
+        '{' + 
+            '"name": "SteinsGateAndroidClock",'+
+            '"description": "Aplicacion Android Reloj con el estilo basado en el Medidor de Divergencia del anime Steins;Gate.", '+
+            '"link": "https://gitlab.com/NicolasMarin/steinsgateandroidclock",'+
+            '"image": "project_image_3.png"'+
         '},' +
         '{' + 
             '"name": "MyPokedex",'+
@@ -13,10 +19,10 @@ projectsData =
             '"image": "project_image_2.png"'+
         '},'+
         '{' + 
-            '"name": "SteinsGateAndroidClock",'+
-            '"description": "Aplicacion Android Reloj con el estilo basado en el Medidor de Divergencia del anime Steins;Gate.", '+
-            '"link": "https://gitlab.com/NicolasMarin/steinsgateandroidclock",'+
-            '"image": "project_image_3.png"'+
+            '"name": "Updates Notifier", ' +
+            '"description": "Aplicacion Android que te avisa si algun contenido de una Pagina Web ha cambiado.", ' +
+            '"link": "https://gitlab.com/NicolasMarin/updates-notifier",'+
+            '"image": "project_image_1.png"'+
         '},'+
         '{ '+
             '"name": "Rename Files", '+
