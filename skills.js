@@ -1,51 +1,47 @@
 skillsData = 
     '[' +
         '{' + 
-            '"key": "Lenguajes", ' +
-            '"values": ["Java", "Kotlin", "Javascript"]' +
+            '"key": "Programming Languages", ' +
+            '"values": ["Java", "Kotlin"]' +
+        '},' +
+        '{' + 
+            '"key": "UI", ' +
+            '"values": ["Activities", "Fragments", "ViewBinding", "DataBinding"]' +
         '},' +
         '{' + 
             '"key": "Android", ' +
-            '"values": ["Fragments", "Styles", "Service", "BroadcastReceiver", "RecyclerView", "Notification", "AlarmManager", "MutableLiveData", "Intent/Intent Filter", "Menu", "AlertDialog", "FloatingActionButton"]' +
-        '},' +
-        '{' + 
-            '"key": "Android: Componentes de Arquitectura", ' +
-            '"values": ["ViewModel", "Room", "LiveData"]' +
-        '},' +
-        '{' + 
-        '"key": "Android: Librerias", ' +
-        '"values": ["Retrofit", "Gson", "Glide"]' +
-        '},' +
-        '{' + 
-            '"key": "Patrones", ' +
-            '"values": ["MVVM", "MVP", "MVC", "Singleton"]' +
-        '},' +
-        '{' + 
-            '"key": "VCS", ' +
-            '"values": ["Git (GitLab)", "Git (GitHub)", "Git (GitLab CI)"]' +
-        '},' +
-        '{' + 
-            '"key": "Metodologías, comunicación y trabajo en equipo", ' +
-            '"values": ["Scrum", "Zoom", "Meet", "Trello", "Jira"]' +
+            '"values": ["ViewModel", "LiveData", "Coroutines", "Service", "BroadcastReceiver", "Notification", "Sharedpreferences", "AlarmManager", "Intent/Intent Filter", "Menu", "Styles"]' +
         '},' +
         '{' + 
             '"key": "Database", ' +
-            '"values": ["Sql", "SQLite", "PostgreSQL", "MySQL", "MongoDB"]' +
+            '"values": ["Sql", "SQLite", "Room"]' +
         '},' +
         '{' + 
-            '"key": "S.O", ' +
-            '"values": ["Windows", "Linux", "Android"]' +
+            '"key": "Api-rest request", ' +
+            '"values": ["Retrofit", "Volley"]' +
         '},' +
         '{' + 
-            '"key": "IDE", ' +
-            '"values": ["Eclipse", "Android Studio"]' +
+            '"key": "Android: Libraries", ' +
+            '"values": ["Gson", "Glide", "Hilt", "Navegation", "Safe Args"]' +
         '},' +
         '{' + 
-            '"key": "Editores", ' +
-            '"values": ["Visual Studio Code", "Sublime Text"]' +
+            '"key": "Arquitecture/Patterns", ' +
+            '"values": ["MVVM", "MVI", "MVP", "Singleton", "Clean Arquitecture", "Use cases"]' +
         '},' +
         '{' + 
-            '"key": "Otros", ' +
-            '"values": ["HTML", "JSON", "XML", "JUnit", "Hibernate", "POO", "Linea de Comandos", "Maven", "Gradle", "Jsoup", "Swing", "WindowBuilder", "Consumo de Api-rest"]' +
+            '"key": "VCS", ' +
+            '"values": ["Git", "GitLab", "GitHub", "Bitbucket", "GitKraken", "Gitflow"]' +
+        '},' +
+        '{' + 
+            '"key": "IDE/Editor", ' +
+            '"values": ["Android Studio", "Visual Studio Code", "Sublime Text"]' +
+        '},' +
+        '{' + 
+            '"key": "Methodologies, communication and teamwork", ' +
+            '"values": ["Scrum", "Slack", "Teams", "Zoom", "Meet", "Trello", "Jira", "Figma"]' +
+        '},' +
+        '{' + 
+            '"key": "Others", ' +
+            '"values": ["JSON", "XML", "UnitTesting (JUnit)", "POO", "Gradle", "Jsoup"]' +
         '}' +
     ']';
