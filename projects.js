@@ -2,36 +2,26 @@ projectsData =
     '[' +
         '{' + 
             '"name": "VideoPartReminder",'+
-            '"description": "Aplicacion Android que permite guardar la url, el nombre y un momento de un video de Youtube que quieras recordar.", '+
+            '"description": "Android app that allows to save the url, name and a time from a Youtube video that you will want to remember later.", '+
             '"link": "https://gitlab.com/NicolasMarin/videopartreminder",'+
             '"image": "project_image_4.png"'+
+        '},'+
+        '{' + 
+            '"name": "Updates Notifier", ' +
+            '"description": "Android app that notifies you if any content of a Web Page has changed.", ' +
+            '"link": "https://gitlab.com/NicolasMarin/updates-notifier",'+
+            '"image": "project_image_1.png"'+    
         '},' +
         '{' + 
             '"name": "SteinsGateAndroidClock",'+
-            '"description": "Aplicacion Android Reloj con el estilo basado en el Medidor de Divergencia del anime Steins;Gate.", '+
+            '"description": "Android App that works as a Clock in the style based on the Divergence Meter from the anime Steins;Gate.", '+
             '"link": "https://gitlab.com/NicolasMarin/steinsgateandroidclock",'+
             '"image": "project_image_3.png"'+
         '},' +
         '{' + 
             '"name": "MyPokedex",'+
-            '"description": "Aplicacion Android que recrea un Pokedex del anime de Pokemon, consumiendo la Api-Rest PokéAPI.", '+
+            '"description": "Android app that recreates a Pokedex from the Pokemon anime, consuming the Api-Rest PokéAPI.", '+
             '"link": "https://gitlab.com/NicolasMarin/mypokedex",'+
-            '"image": "project_image_2.png"'+
-        '},'+
-        '{' + 
-            '"name": "Updates Notifier", ' +
-            '"description": "Aplicacion Android que te avisa si algun contenido de una Pagina Web ha cambiado.", ' +
-            '"link": "https://gitlab.com/NicolasMarin/updates-notifier",'+
-            '"image": "project_image_1.png"'+
-        '},'+
-        '{ '+
-            '"name": "Rename Files", '+
-            '"description": "Aplicacion de linea de comandos para renombrar todos los archivos de un directorio con el mismo patron.", '+
-            '"link": "https://gitlab.com/NicolasMarin/rename-files"'+
-        '},'+
-        '{'+ 
-            '"name": "ImagesToPdf", '+
-            '"description": "Programa Java para convertir los archivos de imágenes en un directorio en un archivo PDF.", '+
-            '"link": "https://gitlab.com/NicolasMarin/images-to-pdf"'+
+            '"image": "project_image_2.png"'+        
         '}'+
     ']';
