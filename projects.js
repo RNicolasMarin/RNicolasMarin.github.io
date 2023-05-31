@@ -1,6 +1,12 @@
 projectsData = 
     '[' +
         '{' + 
+            '"name": "PokeManager",'+
+            '"description": "An improved Android application to function as a Pokedex using the PokeApi and the paging library to load the data by pages.", '+
+            '"link": "https://github.com/RNicolasMarin/PokeManager/tree/master",'+
+            '"image": "project_image_5.gif"'+
+        '},'+
+        '{' + 
             '"name": "VideoPartReminder",'+
             '"description": "Android app that allows to save the url, name and a time from a Youtube video that you will want to remember later.", '+
             '"link": "https://gitlab.com/NicolasMarin/videopartreminder",'+

@@ -1,6 +1,6 @@
 function drawProjectsTable(){
-	var columnMax = window.outerWidth > 1685 ? 2 : (window.outerWidth > 865 ? 1 : 0);
-
+	var windowWidth = window.innerWidth
+	var columnMax = windowWidth > 1685 ? 2 : (windowWidth > 865 ? 1 : 0);
 	var projects = JSON.parse(projectsData);
 
 	var htmlToInsertProjects = "";
