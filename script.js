@@ -26,7 +26,7 @@ function drawProjectsTable(){
 							<a class="project-button-link" href="${element.link}">\n
 								<span class="button-repo">\n
 									<i id="button-repo-icon" class="fas fa-code"></i>\n
-									Repositorio\n
+									Repository\n
 								</span>\n
 							</a>\n
 						</div>\n
