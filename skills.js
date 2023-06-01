@@ -10,7 +10,7 @@ skillsData =
         '},' +
         '{' + 
             '"key": "Android", ' +
-            '"values": ["ViewModel", "LiveData", "Coroutines", "Service", "BroadcastReceiver", "Notification", "Sharedpreferences", "AlarmManager", "Intent/Intent Filter", "Menu", "Styles"]' +
+            '"values": ["ViewModel", "LiveData", "StateFlow", "Coroutines", "Service", "BroadcastReceiver", "Notification", "Sharedpreferences", "AlarmManager", "Intent/Intent Filter", "Menu", "Styles"]' +
         '},' +
         '{' + 
             '"key": "Database", ' +
@@ -22,11 +22,11 @@ skillsData =
         '},' +
         '{' + 
             '"key": "Android: Libraries", ' +
-            '"values": ["Gson", "Glide", "Hilt", "Navegation", "Safe Args"]' +
+            '"values": ["Gson", "Glide", "Hilt", "Navigation", "Safe Args", "Paging", "SplashScreen"]' +
         '},' +
         '{' + 
             '"key": "Arquitecture/Patterns", ' +
-            '"values": ["MVVM", "MVI", "MVP", "Singleton", "Clean Arquitecture", "Use cases"]' +
+            '"values": ["MVVM", "MVI", "MVP", "Singleton", "Repository", "Clean Arquitecture", "Use cases"]' +
         '},' +
         '{' + 
             '"key": "VCS", ' +
@@ -38,10 +38,10 @@ skillsData =
         '},' +
         '{' + 
             '"key": "Methodologies, communication and teamwork", ' +
-            '"values": ["Scrum", "Slack", "Teams", "Zoom", "Meet", "Trello", "Jira", "Figma"]' +
+            '"values": ["Scrum", "Slack", "Teams", "Zoom", "Meet", "Trello", "Jira", "Figma", "Bitrise"]' +
         '},' +
         '{' + 
             '"key": "Others", ' +
-            '"values": ["JSON", "XML", "UnitTesting (JUnit)", "POO", "Gradle", "Jsoup"]' +
+            '"values": ["JSON", "XML", "UnitTesting (JUnit)", "Truth", "TDD", "POO", "Gradle", "Jsoup"]' +
         '}' +
     ']';
