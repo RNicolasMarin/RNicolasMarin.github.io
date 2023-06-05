@@ -25,7 +25,7 @@ skillsData =
             '"values": ["Gson", "Glide", "Hilt", "Navigation", "Safe Args", "Paging", "SplashScreen"]' +
         '},' +
         '{' + 
-            '"key": "Arquitecture/Patterns", ' +
+            '"key": "Arquitecture / Patterns", ' +
             '"values": ["MVVM", "MVI", "MVP", "Singleton", "Repository", "Clean Arquitecture", "Use cases"]' +
         '},' +
         '{' + 
