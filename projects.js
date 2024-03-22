@@ -1,6 +1,12 @@
 projectsData = 
     '[' +
         '{' + 
+            '"name": "2048",'+
+            '"description": "An Android Compose application that replicates the 2048 game.", '+
+            '"link": "https://github.com/RNicolasMarin/2048/tree/master",'+
+            '"image": "project_image_6.gif"'+
+        '},'+
+        '{' + 
             '"name": "PokeManager",'+
             '"description": "An improved Android application to function as a Pokedex using the PokeApi and the paging library to load the data by pages.", '+
             '"link": "https://github.com/RNicolasMarin/PokeManager/tree/master",'+

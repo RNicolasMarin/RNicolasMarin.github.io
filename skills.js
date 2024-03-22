@@ -6,11 +6,11 @@ skillsData =
         '},' +
         '{' + 
             '"key": "UI", ' +
-            '"values": ["Activities", "Fragments", "ViewBinding", "DataBinding"]' +
+            '"values": ["Activities", "Fragments", "ViewBinding", "DataBinding", "Compose"]' +
         '},' +
         '{' + 
             '"key": "Android", ' +
-            '"values": ["ViewModel", "LiveData", "StateFlow", "Coroutines", "Service", "BroadcastReceiver", "Notification", "Sharedpreferences", "AlarmManager", "Intent/Intent Filter", "Menu", "Styles"]' +
+            '"values": ["ViewModel", "LiveData", "StateFlow", "Coroutines", "Service", "BroadcastReceiver", "Notification", "Sharedpreferences", "AlarmManager", "Intent/Intent Filter", "Menu", "Styles", "CompositionLocalProvider", ".kts"]' +
         '},' +
         '{' + 
             '"key": "Database", ' +
@@ -42,6 +42,6 @@ skillsData =
         '},' +
         '{' + 
             '"key": "Others", ' +
-            '"values": ["JSON", "XML", "UnitTesting (JUnit)", "Truth", "TDD", "POO", "Gradle", "Jsoup"]' +
+            '"values": ["JSON", "XML", "UnitTesting (JUnit)", "Truth", "Mockk", "TDD", "POO", "Gradle", "Jsoup"]' +
         '}' +
     ']';
